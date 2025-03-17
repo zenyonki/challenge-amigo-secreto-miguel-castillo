@@ -5,19 +5,21 @@ function agregarAmigo() {
     const inputAmigo = document.getElementById('amigo');
     const listaAmigos = document.getElementById('listaAmigos');
 
-    // Obtener el valor del campo de texto
+    // Leer documentación sobre value.trim
     const nombre = inputAmigo.value.trim();
 
-    // Validar que el campo no esté vacío
+    // Esto se lo vi a otra persona en un repositorio en GitHub
+    //Pensana que al poner el "if" tendría que poner el "else" del push
     if (nombre === '') {
         alert('Por favor, escribe un nombre válido.');
         return;
     }
 
-    // Agregar el nombre al array
+    // Aquí se agregan los nombre a la lista (array)
     amigos.push(nombre);
 
-    // Crear un elemento de lista y añadirlo al DOM
+    // Esto me lo explicó ChatGPT para poder crear una lista, en relación a modificar el DOM
+    //Esto no vino en el curso, pero lo que aprendí sobre ChatGPT me ayudó
     const li = document.createElement('li');
     li.textContent = nombre;
     listaAmigos.appendChild(li);
@@ -37,9 +39,9 @@ function sortearAmigo() {
         return;
     }
 
-    // Obtener un índice aleatorio del array
-    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
-    const amigoSorteado = amigos[indiceAleatorio];
+    // Obtener un nombre aleatorio del array
+    const nombreAleatorio = Math.floor(Math.random() * amigos.length);
+    const amigoSorteado = amigos[nombreAleatorio];
 
     // Mostrar el nombre sorteado en la sección de resultados
     resultado.textContent = `¡El amigo secreto es: ${amigoSorteado}!`;
