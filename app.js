@@ -48,4 +48,4 @@ function sortearAmigo() {
 }
 //Estos se agregan sólo para verificar que se agregan bien (y para ver si aprendí a usar el console.log)
 console.log (amigos);
-console.log(inputAmigo);
+console.log(nombre);
