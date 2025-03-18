@@ -45,7 +45,7 @@ function sortearAmigo() {
 
     // Mostrar el nombre sorteado en la sección de resultados
     //Esto tampoco se vio en el curso
-    resultado.textContent = `¡El amigo secreto es: ${amigoSorteado}!`;
+    resultado.textContent = `¡Tu amigo secreto es: ${amigoSorteado}!`;
 }
 //Estos se agregan sólo para verificar que se agregan bien (y para ver si aprendí a usar el console.log)
 console.log (amigos);

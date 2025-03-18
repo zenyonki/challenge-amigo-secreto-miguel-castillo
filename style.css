@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: #5F99AE;
+    --color-secondary: #F5ECE0;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button: #693382;
+    --color-button-hover: #336D82;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -42,13 +42,13 @@ body {
 
 /*Se agrega un mensaje de bienvenida para darle mayor personalización*/
 .welcome-message {
-    font-family: "Inter", sans-serif;
+    font-family: "Merriweather", serif;
     font-size: 20px;
     font-weight: 400;
     color: var(--color-white);
     margin-top: 10px auto;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0); /*Según yo, con esto queda transparente*/
+    background-color: var(--color-primary); /*Según yo, con esto queda transparente*/
     padding: 10px;
     border-radius: 10px;
     max-width: 80%;
